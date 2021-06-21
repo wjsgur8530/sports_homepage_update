@@ -31,7 +31,7 @@
                         <input type="text" name="search" id="search" placeholder="검색어 입력">
                     </li>
                     <li>
-                        <input type="submit" class="board_btn" value="검색" maxlength="100" tabindex="1">
+                        <input type="submit" class="board_btn" value="검색" maxlength="100" tabindex="1" style="border: 0; outline: 0;">
                     </li>
                 </form>
             </ul>
@@ -71,7 +71,7 @@
             </table>
             {% if user.is_authenticated %}
             <div class="write">
-                <input type="button" class="write_btn" name="write_btn" value="글쓰기" onclick="location.href='{% url 'create' %}'">
+                <input type="button" class="write_btn" name="write_btn" value="글쓰기" onclick="location.href='{% url 'create' %}'" style="border: 0; outline: 0;">
             </div>
             {% endif %}
         </div>

@@ -16,12 +16,12 @@
             <span>게시판</span>
             <span>게시판 글쓰기</span>
         </div>
-        <h3>게시판 글쓰기</h3>
+        <h3>게시글 수정하기</h3>
         <hr>
-        <form method="POST" action="{% url 'create' %}">
+        <form method="POST" action="{% url 'edit' board.pk %}">
             {% csrf_token %}
             {% bootstrap_form boardForm %}
-            <input type="submit" class="btn btn-success col-12" value="글쓰기">
+            <input type="submit" class="btn btn-primary col-12" value="수정하기">
         </form>
     </div>
 </div>

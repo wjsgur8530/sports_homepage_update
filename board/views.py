@@ -48,13 +48,11 @@ def boardEdit(request, pk):
         board.title = request.POST['title']
         board.content = request.POST['content']
         board.user = request.user
-
         board.save()
         return redirect('board')
-
     else:
         boardForm = BoardForm
-        return render(request, 'update.html', {'boardForm':boardForm})
+        return render(request, 'board_edit.html', {'boardForm':boardForm, 'board': board})
 
 def boardDelete(request, pk):
     board = Board.objects.get(id=pk)

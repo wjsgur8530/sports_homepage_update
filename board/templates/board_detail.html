@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{{ board_detail.update_counter }}
+<!-- 함수 호출하여 hit+1 -->
+<div class="board_container">
+    <div class="board_title">
+        <h3 style="background-image: url({% static 'img/마크.jpg' %}"><span class="title">게시판</span></h3>
+        <div class="introduce_title_bg" style="background: url({% static 'img/마크.jpg' %} no-repeat 50% 100%);"></div>
+        <ul>
+            <li><a href="{% url 'board' %}">게시판</a></li>
+        </ul>
+    </div>
+    <div class="board_content">
+        <div class="toolbar">
+            <span>스포츠융복합연구소</span>
+            <span>게시판</span>
+            <span>게시판</span>
+        </div>
+
+    </div>
+</div>
+{% endblock%}

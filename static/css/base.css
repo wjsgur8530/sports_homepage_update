@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* header top navi*/
+.header_container .top_navi_container {
+    height: 39px;
+    display: flex;
+    background-color: lightgrey;
+    border-bottom: 1px solid #adb5bd;
+}
+.header_container .top_navi_container .top_navi {
+    margin-left: auto;
+    width: 850px;
+    position: relative;
+}
+.header_container .top_navi_container .top_navi li {
+    list-style-type: none;
+}
+.header_container .top_navi_container .top_navi a:hover {
+    background-color: green;
+    color: white;
+}
+.header_container .top_navi_container a {
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    height: 30px;
+    line-height: 27px;
+    font-weight: bold;
+    background-color: white;
+}
+/* header logo */
+.header_container .logo_container {
+    margin: 0 auto;
+    width: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+.header_container .logo_container .logo {
+    padding-top: 14px;
+    display: flex;
+    align-items: center;
+    line-height: 1.5em;
+}
+.header_container .logo_container .logo h3 {
+    padding: 0.3em;
+    font-size: 1.4em;
+}
+/* header navi */
+.nav_container {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #46AA46;
+    list-style-type: none;
+    justify-content: center;
+}
+.nav_item {
+    padding: 15px;
+    cursor: pointer;
+}
+.nav_item a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+}
+.nav_item:hover {
+    background: green;
+}
+.nav_item a:hover {
+    color: white;
+    text-decoration: none;
+}
+/* content */
+.home_container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-height: 2100px;
+}
+.home_container .content_container img {
+    width: 100%;
+    height: 300px;
+}
+.home_container .board_content_container {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+    height: 430px;
+    padding-top: 2em;
+    padding-bottom: 5em;
+}
+.home_container .board_content_container .board {
+    padding-right: 15px;
+    width: 100%;
+    height: 100%;
+}
+.home_container .board_content_container .board .board_post {
+    padding: 1.5em;
+}
+.home_container .board_content_container .board .board_post li {
+    padding: 1em;
+    font-size: 0.8em;
+}
+.home_container .board_content_container .download .download_post {
+    padding: 1.5em;
+}
+.home_container .board_content_container .download .download_post li {
+    padding: 1em;
+    font-size: 0.8em;
+}
+.home_container .board_content_container .board .board_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #cdcdcd;
+}
+.home_container .board_content_container .board .board_title a {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: grey;
+    padding-right: 1em;
+}
+.home_container .board_content_container .download {
+    padding-right: 15px;
+    width: 100%;
+}
+.home_container .board_content_container .download .download_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #cdcdcd;
+}
+.home_container .board_content_container .download .download_title a {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: grey;
+    padding-right: 1em;
+}
+.home_container .board_content_container .immediate {
+    width: 100%;
+}
+.home_container .board_content_container .immediate .immediate_bg {
+    background-image: url("../img/home.jpg");
+    background-size: cover;
+    max-width: 370px;
+    width: 100%;
+    height: 285px;
+    padding: 1em;
+}
+.home_container .board_content_container .immediate .major_inner li {
+    font-size: 0.8em;
+    float: left;
+    width: 50%;
+    padding: 0 0 5px 5px;
+    box-sizing: border-box;
+    list-style-type: none;
+    z-index: 1;
+    background-color: white;
+    border: 1px solid lightgrey;
+    text-align: center;
+}
+.home_container .board_content_container .immediate .major_inner li:hover {
+    background-color: green;
+}
+.home_container .board_content_container .immediate .major_inner li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.home_container .board_content_container .immediate .major_inner li a:hover {
+    color: white;
+}
+/* footer */
+.footer_container {
+    margin: 0 auto;
+    width: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+.footer_container .footer_navi_container {
+    border-top: 1px solid #cdcdcd;
+}
+.footer_container .footer_navi_container li {
+    float: left;
+    list-style-type: none;
+    padding: 1em;
+    font-size: 0.8em;
+}
+.footer_container .footer_navi_container li a {
+    text-decoration: none;
+    color: grey;
+}
+.address {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 1000px;
+    height: 140px;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #cdcdcd;
+    padding-top: 15px;
+}
+.address img {
+    width: 180px;
+    height: 80px;
+}
+
+/* introduce */
+.introduce_container,
+.establish_container,
+.establish_object_container,
+.group_container,
+.directions_container {
+    display: flex;
+    flex-direction: row;
+    margin: 1em auto;
+    width: 1100px;
+    overflow: hidden;
+    position: relative;
+}
+.introduce_container .introduce_title,
+.establish_container .establish_title,
+.establish_object_container .establish_object_title,
+.group_container .group_title,
+.directions_container .directions_title {
+    padding: 2em;
+    box-sizing: border-box;
+    display: table-cell;
+    width: 300px;
+    vertical-align: top;
+}
+.introduce_container .introduce_title h3,
+.establish_container .establish_title h3,
+.establish_object_container .establish_object_title h3,
+.group_container .group_title h3,
+.directions_container .directions_title h3 {
+    padding: 3em;
+    color: black;
+    font-weight: 900;
+    font-size: 1.3em;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: top;
+    opacity: 40%;
+    height: 130px;
+    border-top: 1px solid black;
+    border-bottom: 3px solid black;
+}
+.introduce_container .introduce_title h3 .title,
+.establish_container .establish_title h3 .title,
+.establish_object_container .establish_object_title h3 .title,
+.group_container .group_title h3 .title,
+.directions_container .directions_title h3 .title {
+    margin-bottom: 5em;
+    opacity: 100%;
+}
+.introduce_container .introduce_title ul li,
+.establish_container .establish_title ul li,
+.establish_object_container .establish_object_title ul li,
+.group_container .group_title ul li,
+.directions_container .directions_title ul li {
+    list-style-type: none;
+    padding: 1em;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    font-weight: bold;
+    background: #fff url('../static/img/minimize_black_24dp.svg') no-repeat 100% 30%;
+    display: list-item;
+}
+.introduce_container .introduce_title ul li a,
+.establish_container .establish_title ul li a,
+.establish_object_container .establish_object_title ul li a,
+.group_container .group_title ul li a,
+.directions_container .directions_title ul li a {
+    display: block;
+    text-decoration: none;
+    color: grey;
+}
+.introduce_container .introduce_content,
+.establish_container .establish_content,
+.establish_object_container .establish_object_content,
+.group_container .group_content,
+.directions_container .directions_content,
+.establish_container .establish_object_content {
+    width: 800px;
+    padding-top: 4em;
+}
+.introduce_container .introduce_content .toolbar,
+.establish_container .establish_content .toolbar,
+.establish_object_container .establish_object_content .toolbar,
+.group_container .group_content .toolbar,
+.directions_container .directions_content .toolbar,
+.establish_container .establish_object_content .toolbar {
+    padding-bottom: 2em;
+}
+.introduce_container .introduce_content .toolbar span:after,
+.establish_container .establish_content .toolbar span:after,
+.establish_object_container .establish_object_content .toolbar span:after,
+.group_container .group_content .toolbar span:after,
+.directions_container .directions_content .toolbar span:after,
+.establish_container .establish_object_content .toolbar span:after {
+    content: '>';
+    padding: 0.5em;
+}
+.introduce_container .introduce_content span:last-child,
+.establish_container .establish_content span:last-child,
+.establish_object_container .establish_object_content span:last-child,
+.group_container .group_content span:last-child,
+.directions_container .directions_content span:last-child {
+    font-weight: bold;
+}
+.introduce_container .introduce_content span:last-child:after,
+.establish_container .establish_content span:last-child:after,
+.establish_object_container .establish_object_content span:last-child:after,
+.group_container .group_content span:last-child:after,
+.directions_container .directions_content span:last-child:after {
+    content: '';
+}
+.introduce_container .introduce_content h2,
+.establish_container .establish_content h2,
+.establish_object_container .establish_object_content h2,
+.group_container .group_content h2,
+.directions_container .directions_content h2 {
+    font-weight: bold;
+}
+.introduce_container .introduce_content h3,
+.establish_container .establish_content h3,
+.establish_object_container .establish_object_content h3,
+.group_container .group_content h3,
+.directions_container .directions_content h3 {
+    font-weight: bold;
+    border-left: 5px solid #8BC34A;
+    padding-left: 0.6em;
+}
+.introduce_container .introduce_content ul li,
+.establish_container .establish_content ul li {
+    list-style-type: none;
+    padding: 1em 0 0.5em 1em;
+    font-weight: bold;
+    color: grey;
+}
+.introduce_container .introduce_content ul li p:before {
+    content: 'º';
+}
+.establish_container .establish_content h5,
+.establish_object_container .establish_object_content h5 {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.establish_container .establish_content h5:before,
+.establish_object_container .establish_object_content h5:before {
+    content: 'º';
+    padding: 0.3em;
+    font-size: 1.5em;
+    color: #8BC34A;
+}
+.establish_container .establish_content h6 {
+    font-weight: bold;
+    color: green;
+}
+.establish_object_container .establish_object_content h6 {
+    font-weight: bold;
+    padding: 0.4em;
+    color: grey;
+    border-bottom: 1px solid lightgrey;
+}
+.establish_container .establish_content h6 span {
+    color: black;
+    padding-left: 0.6em;
+}
+.directions_container .directions_content label {
+    color: grey;
+    padding-top: 0.3em;
+    font-weight: bold;
+}
+.directions_container .directions_content .way {
+    margin-top: 1.5em;
+}
+.establish_container .establish_content h6:before,
+.establish_object_container .establish_object_content h6:before {
+    content: 'º';
+    padding: 1.2em;
+    font-size: 0.8em;
+    color: grey;
+}
+.directions_container .directions_content label:before {
+    content: 'º';
+    padding: 1.2em;
+    font-size: 0.8em;
+    color: grey;
+}
+.introduce_container .introduce_content .earth {
+    width: 1000px;
+    height: 500px;
+    opacity: 70%;
+    border-radius: 50% 75% 100% 75%;
+    margin-top: 4em;
+    margin-bottom: 3em;
+    background: #fff url('../static/img/earth.png') no-repeat 25% 100%;
+}
+.group_container .group_content .group_bg {
+    background-repeat: no-repeat;
+    width: 750px;
+    height: 2200px;
+}
+.establish_object_container .establish_object_content .establish_object_bg {
+    background-repeat: no-repeat;
+    width: 750px;
+    height: 600px;
+}
+.establish_container .establish_content ul .rule p {
+    padding: 0.3em 0 0 1em;
+}
+.establish_container .establish_content ul .rule .indent {
+    margin-top: -1em;
+    padding-left: 2em;
+}

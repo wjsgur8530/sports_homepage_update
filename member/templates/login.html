@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="login_container">
+    <div class="login_title">
+        <h3 style="background-image: url({% static 'img/마크.jpg' %}"><span class="title">로그인</span></h3>
+        <div class="introduce_title_bg" style="background: url({% static 'img/마크.jpg' %} no-repeat 50% 100%);"></div>
+        <ul>
+            <li><a href="{% url 'login' %}}">로그인</a></li>
+        </ul>
+    </div>
+    <div class="login_content">
+        <div class="toolbar">
+            <span>스포츠융복합연구소</span>
+            <span>로그인</span>
+        </div>
+        <h3>로그인</h3>
+        <hr>
+        <div class="login_container_box" style="position: relative;">
+            <div class="login_bg" style="border-top: 2px solid black; border-bottom: 2px solid black; width: 100%; height: 310px; box-sizing:border-box;%}">
+                <div class="login_form_box" style="width: 50%; margin-top: 30px; margin-left: 393px; text-align: center;">
+                    <legend style="font-size: 2.5em; color: green; margin: 0 0 -10px 20px;">LOGIN</legend>
+                    <form method="POST" action="">
+                        {% csrf_token %}
+                        <ul style="line-height: 0.5em;">
+                            <li>
+                                <label for="id" class="label" style="text-align: right; padding-right: 20px; color: black;">아이디</label>
+                                <input type="text" name="id" id="id" class="loginfield" placeholder="아이디" style="border: 1px solid #cdcdcd; padding: 0 5px; margin-right: 36px; height: 28px;">
+                            </li>
+                            <li>
+                                <label for="password" class="label" style="text-align: right; padding-right: 20px; color: black;">비밀번호</label>
+                                <input type="password" name="password" id="password" class="passwordfield" placeholder="비밀번호" maxlength="30" autocomplete="off" style="border: 1px solid #cdcdcd; padding: 0 5px; margin-right: 50px; height: 28px;">
+                            </li>
+    <!--                        background-color: #DFE9F5;-->
+                        </ul>
+                        <div class="login_btn_box">
+                            <input type="submit" value="로그인" class="login_btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <h4 style="color: green; padding-top: 1em;">꼭! 알아두세요.</h4>
+        <p style="font-size: 0.8em; line-height: 1.8em; padding-bottom: 4em;">
+            - 재학생 및 교직원은 <span style="font-weight: bold;">종합정보시스템의 접속 아이디와 비밀번호로 로그인</span>하시기 바랍니다.<br>
+            - 종합정보시스템 계정이 있는 사용자만 로그인이 가능합니다.
+        </p>
+    </div>
+</div>
+{% endblock%}

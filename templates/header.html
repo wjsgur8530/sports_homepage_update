@@ -1,0 +1,33 @@
+{% load static %}
+<div class="header_container">
+    <div class="top_navi_container">
+        {% if user.is_authenticated %}
+        <div class="top_navi">
+            <a href="{% url 'logout' %}">로그아웃</a><a href="https://www.konkuk.ac.kr/do/Index.do">서울캠퍼스</a><a href="https://www.kku.ac.kr/mbshome/mbs/wwwkr/index.do">글로컬캠퍼스</a>
+        </div>
+        {% else %}
+        <div class="top_navi">
+            <a href="{% url 'login' %}">로그인</a><a href="https://www.konkuk.ac.kr/do/Index.do">서울캠퍼스</a><a href="https://www.kku.ac.kr/mbshome/mbs/wwwkr/index.do">글로컬캠퍼스</a>
+        </div>
+        {% endif %}
+    </div>
+    <div class="logo_container">
+        <div class="logo">
+            <h1>
+                <a href="/" style="cursor: pointer;"><img src="{% static 'img/학교 로고.png' %}" alt="" style="padding: 0.5em;"></a>
+            </h1>
+            <h3 style="font-weight: bold;">스포츠융복합연구소</h3>
+        </div>
+    </div>
+    <div class="header_navi_container">
+        <nav>
+            <ul class="nav_container">
+                <li class="nav_item" style="width: 249px;"><a href="{% url 'introduce' %}" class="nav1">연구소 소개</a></li>
+                <li class="nav_item" style="width: 249px;"><a href="{% url 'researchfield' %}">연구소 소식</a></li>
+                <li class="nav_item" style="width: 188px;"><a href="{% url 'board' %}">공지사항</a></li>
+                <li class="nav_item" style="width: 141px;"><a href="{% url 'board' %}">게시판</a></li>
+                <li class="nav_item" style="width: 141px;"><a href="">자료실</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>

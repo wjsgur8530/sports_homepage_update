@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="thesisdata_container">
+    <div class="thesisdata_title">
+        <h3 style="background-image: url({% static 'img/마크.jpg' %}"><span class="title">연구소 소식</span></h3>
+        <div class="introduce_title_bg" style="background: url({% static 'img/마크.jpg' %} no-repeat 50% 100%);"></div>
+        <ul>
+            <li><a href="{% url 'researchfield' %}">연구분야</a></li>
+            <li><a href="{% url 'thesisdata' %}">논문자료</a></li>
+            <li><a href="{% url 'researchproject' %}">연구과제</a></li>
+            <li><a href="{% url 'presentation' %}">학술발표자료</a></li>
+        </ul>
+    </div>
+    <div class="thesisdata_content">
+        <div class="toolbar">
+            <span>스포츠융복합연구소</span>
+            <span>연구소 소식</span>
+            <span>논문자료</span>
+        </div>
+        <hr>
+        <h3>논문자료</h3>
+        <ul>
+            <li>
+                <p>
+                    골프 퍼팅 시 지면 경사도에 따른 운동학적 변인 분석
+                </p>
+            </li>
+            <li>
+                <p>
+                    골프 드라이버 스윙 시 운동역학 요인들과 비거리 관련성 분석
+                </p>
+            </li>
+            <li>
+                <p>
+                    골프 퍼팅 시 자세 흔들림과 퍼터 헤드의 운동학적 변인 간 상관성 분석
+                </p>
+            </li>
+            <li>
+                <p>
+                    스쿼트 동작 시 수동적 발목 가동범위와 무릎 관절 운동역학적 변인 간 상관성 분석
+                </p>
+            </li>
+            <li>
+                <p>
+                    Knee Joint Moment during Golf Swing, Drop-landing, and Cuuting Maneuver
+                </p>
+            </li>
+            <li>
+                <p>
+                    KLPGA 선수들의 드라이버 스윙 Sequence에 따른 운동학적 변인 분석
+                </p>
+            </li>
+            <li>
+                <p>
+                    드라이버 스윙 시 헤드 스피드 증가가 지면반력에 미치는 영향
+                </p>
+            </li>
+            <li>
+                <p>
+                    골프 퍼팅 시 엘리트와 초보자들의 퍼팅 동작에 따른 운동학적 비교 분석
+                </p>
+            </li>
+            <li>
+                <p>
+                    골프 퍼팅 시 숙련도와 거리 요인이 신체 무게 중심과 압력 중심에 미치는 영향
+                </p>
+            </li>
+            <li>
+                <p>
+                    딥 스쿼트 동작 시 하퇴 키네시오 테이핑 위치와 성별이 발목 관절의 가동범위와 모멘트에 미치는 영향
+                </p>
+            </li>
+            <li>
+                <p>
+                    Comparison of the Capability of Proprioception Perception between Collegiate Golfer and Non-golfer
+                </p>
+            </li>
+            <li>
+                <p>
+                    골프 드라이버 스윙 시 스탠스 유형이 클럽헤드 스피드와 압력중심 및 신체 무게중심에 미치는 영향
+                </p>
+            </li>
+            <li>
+                <p>
+                    Effects of Targeted Knee Flexion Angle on the Biomechanical Factors of Upward and Downward Phases during Forward Lunge
+                </p>
+            </li>
+            <li>
+                <p>
+                    숙련자 및 비숙련자 대상 골프 아이언 샷과 스내그(SNAG) 런처 샷의 근활성도 및 운동학적 변인 비교 분석
+                </p>
+            </li>
+            <li>
+                <p>
+                    Kicking Modality during Erratic-dynamic and Static Condition Effects the Muscular Co-activation of Attacker
+                </p>
+            </li>
+            <li>
+                <p>
+                    Fatigue Injury Risk in Anterior Cruciate Ligament of Target Side Knee during Golf Swing
+                </p>
+            </li>
+            <li>
+                <p>
+                    골프 스윙 시 드라이버와 아이언 클럽의 차이가 족저압 패턴에 미치는 영향
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock%}

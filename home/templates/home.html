@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="home_container">
+    <div class="content_container">
+        <img src="static/img/mainbg.png" alt="">
+    </div>
+    <div class="board_content_container">
+        <div class="board">
+            <span class="board_title"><h6 style="font-weight: bold; padding-bottom: 1em;">게시판</h6><a href="{% url 'board' %}" style="font-weight: bold;">+더보기</a></span>
+            {% for list in board %}
+                <li style="font-size: 0.9em; padding-top: 15px; font-weight: bold;"><a href="{% url 'detail' list.pk %}" style="text-decoration: none; color: #333;">{{list.title}}</a><br></li>
+                <span style="font-size: 0.7em; padding-left: 12px; padding-top: -10px;">{{list.created_date|date:"Y-m-d" }}</span><br>
+            {% endfor %}
+        </div>
+        <div class="download">
+            <span class="download_title"><h6 style="font-weight: bold; padding-bottom: 1em; ">자료실</h6><a href="" style="font-weight: bold;">+더보기</a></span>
+            <ul class="download_post">
+<!--                자료실 만들고 작성-->
+            </ul>
+        </div>
+        <div class="immediate">
+            <span class="immediate_title"><h6 style="font-weight: bold; padding-bottom: 0.9em; "><span style="color:green; border-top:1px solid green;">바로</span>가기</h6></span>
+            <div class="immediate_bg">
+                <ul class="major_inner">
+                    <li><a href="/">스포츠융복합학과</a></li>
+                    <li><a href="http://tms.kku.ac.kr/member/login.asp">온라인논문투고시스템</a></li>
+                    <li><a href="https://grad.kku.ac.kr/main.do" style="font-size: 0.95em">Admission 일반대학원</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}

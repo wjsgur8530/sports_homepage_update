@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="researchfield_container">
+    <div class="researchfield_title">
+        <h3 style="background-image: url({% static 'img/마크.jpg' %}"><span class="title">연구소 소식</span></h3>
+        <div class="introduce_title_bg" style="background: url({% static 'img/마크.jpg' %} no-repeat 50% 100%);"></div>
+        <ul>
+            <li><a href="{% url 'researchfield' %}">연구분야</a></li>
+            <li><a href="{% url 'thesisdata' %}">논문자료</a></li>
+            <li><a href="{% url 'researchproject' %}">연구과제</a></li>
+            <li><a href="{% url 'presentation' %}">학술발표자료</a></li>
+        </ul>
+    </div>
+    <div class="researchfield_content">
+        <div class="toolbar">
+            <span>스포츠융복합연구소</span>
+            <span>연구소 소식</span>
+            <span>연구분야</span>
+        </div>
+        <hr>
+        <h3>연구분야</h3>
+        <ul>
+            <li>
+                <p>
+                    스포츠 선수 기술 분석을 통한 경기력 향상 연구
+                </p>
+            </li>
+            <li>
+                <p>
+                    스포츠 R&D 연구 기반 스포츠 장비 개발 연구
+                </p>
+            </li>
+            <li>
+                <p>
+                    하지 관절 상해 메카니즘 및 예방 기전 연구
+                </p>
+            </li>
+            <li>
+                <p>
+                    고령자 및 장애인 운동기능 및 자세균형 연구
+                </p>
+            </li>
+            <li>
+                <p>
+                    근수축 분석을 통한 운동능력 평가 연구
+                </p>
+            </li>
+            <li>
+                <p>
+                    인체 근골격계 모델링 및 시뮬레이션 연구
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock%}

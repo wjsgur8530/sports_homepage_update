@@ -1,0 +1,125 @@
+.researchfield_container,
+.presentation_container,
+.research_project_container,
+.thesisdata_container {
+    display: flex;
+    flex-direction: row;
+    margin: 1em auto;
+    width: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+.researchfield_container .researchfield_title,
+.presentation_container .presentation_title,
+.research_project_container .research_project_title,
+.thesisdata_container .thesisdata_title {
+    padding: 2em;
+    box-sizing: border-box;
+    display: table-cell;
+    width: 300px;
+    vertical-align: top;
+}
+.researchfield_container .researchfield_title h3,
+.presentation_container .presentation_title h3,
+.research_project_container .research_project_title h3,
+.thesisdata_container .thesisdata_title h3 {
+    padding: 3em;
+    color: black;
+    font-weight: 900;
+    font-size: 1.3em;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: top;
+    opacity: 40%;
+    height: 130px;
+    border-top: 1px solid black;
+    border-bottom: 3px solid black;
+}
+.researchfield_container .researchfield_title h3 .title,
+.presentation_container .presentation_title h3 .title,
+.research_project_container .research_project_title h3 .title,
+.thesisdata_container .thesisdata_title h3 .title {
+    margin-bottom: 5em;
+    opacity: 100%;
+}
+.researchfield_container .researchfield_title ul li,
+.presentation_container .presentation_title ul li,
+.research_project_container .research_project_title ul li,
+.thesisdata_container .thesisdata_title ul li {
+    list-style-type: none;
+    padding: 1em;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    font-weight: bold;
+    background: #fff url('../static/img/minimize_black_24dp.svg') no-repeat 100% 30%;
+    display: list-item;
+}
+.researchfield_container .researchfield_title ul li a,
+.presentation_container .presentation_title ul li a,
+.research_project_container .research_project_title ul li a,
+.thesisdata_container .thesisdata_title ul li a {
+    display: block;
+    text-decoration: none;
+    color: grey;
+}
+.researchfield_container .researchfield_content,
+.presentation_container .presentation_content,
+.research_project_container .research_project_content,
+.thesisdata_container .thesisdata_content {
+    width: 800px;
+    padding-top: 4em;
+}
+.researchfield_container .researchfield_content .toolbar,
+.presentation_container .presentation_content .toolbar,
+.research_project_container .research_project_content .toolbar,
+.thesisdata_container .thesisdata_content .toolbar {
+    padding-bottom: 2em;
+}
+.researchfield_container .researchfield_content .toolbar span:after,
+.presentation_container .presentation_content .toolbar span:after,
+.research_project_container .research_project_content .toolbar span:after,
+.thesisdata_container .thesisdata_content .toolbar span:after {
+    content: '>';
+    padding: 0.5em;
+}
+.researchfield_container .researchfield_content span:last-child,
+.presentation_container .presentation_content span:last-child,
+.research_project_container .research_project_content span:last-child,
+.thesisdata_container .thesisdata_content span:last-child {
+    font-weight: bold;
+}
+.researchfield_container .researchfield_content span:last-child:after,
+.presentation_container .presentation_content span:last-child:after,
+.research_project_container .research_project_content span:last-child:after,
+ .thesisdata_container .thesisdata_content span:last-child:after {
+    content: '';
+}
+.researchfield_container .researchfield_content h2,
+.presentation_container .presentation_content h2,
+.research_project_container .research_project_content h2,
+ .thesisdata_container .thesisdata_content h2 {
+    font-weight: bold;
+}
+.researchfield_container .researchfield_content h3,
+.presentation_container .presentation_content h3,
+.research_project_container .research_project_content h3,
+ .thesisdata_container .thesisdata_content h3 {
+    font-weight: bold;
+    border-left: 5px solid #8BC34A;
+    padding-left: 0.6em;
+}
+.researchfield_container .researchfield_content ul li,
+.presentation_container .presentation_content ul li,
+.research_project_container .research_project_content ul li,
+ .thesisdata_container .thesisdata_content ul li {
+    list-style-type: none;
+    padding: 1em 0 0.5em 1em;
+    font-weight: bold;
+    color: grey;
+}
+.researchfield_container .researchfield_content ul li p:before,
+.presentation_container .presentation_content ul li p:before,
+.research_project_container .research_project_content ul li p:before,
+ .thesisdata_container .thesisdata_content ul li p:before {
+    content: 'º';
+}

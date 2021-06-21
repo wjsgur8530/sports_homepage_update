@@ -5,7 +5,7 @@ from board.models import Board
 
 
 def home(request):
-    board = Board.objects.all().order_by('-pk')
+    board = Board.objects.all().order_by('-pk')[:5]
     return render(request, 'home.html', {'board': board})
 
 def introduce(request):

@@ -3,11 +3,11 @@
     <div class="top_navi_container">
         {% if user.is_authenticated %}
         <div class="top_navi">
-            <a href="{% url 'logout' %}">로그아웃</a><a href="https://www.konkuk.ac.kr/do/Index.do">서울캠퍼스</a><a href="https://www.kku.ac.kr/mbshome/mbs/wwwkr/index.do">글로컬캠퍼스</a>
+            <a href="{% url 'logout' %}">로그아웃</a>
         </div>
         {% else %}
         <div class="top_navi">
-            <a href="{% url 'login' %}">로그인</a><a href="https://www.konkuk.ac.kr/do/Index.do">서울캠퍼스</a><a href="https://www.kku.ac.kr/mbshome/mbs/wwwkr/index.do">글로컬캠퍼스</a>
+            <a href="{% url 'login' %}">관리자 로그인</a>
         </div>
         {% endif %}
     </div>

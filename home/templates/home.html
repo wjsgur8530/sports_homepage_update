@@ -9,7 +9,7 @@
         <div class="board">
             <span class="board_title"><h6 style="font-weight: bold; padding-bottom: 1em;">게시판</h6><a href="{% url 'board' %}" style="font-weight: bold;">+더보기</a></span>
             {% for list in board %}
-                <li style="font-size: 0.9em; padding-top: 15px; font-weight: bold;"><a href="{% url 'detail' list.pk %}" style="text-decoration: none; color: #333;">{{list.title}}</a><br></li>
+                <li style="font-size: 0.8em; padding-top: 15px; padding-left: 10px; font-weight: bold;"><a href="{% url 'detail' list.pk %}" style="text-decoration: none; color: #333;">{{list.title}}</a><br></li>
                 <span style="font-size: 0.7em; padding-left: 12px; padding-top: -10px;">{{list.created_date|date:"Y-m-d" }}</span><br>
             {% endfor %}
         </div>

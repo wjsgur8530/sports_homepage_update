@@ -105,8 +105,12 @@
 .home_container .board_content_container .board .board_post {
     padding: 1.5em;
 }
-.home_container .board_content_container .board .board_post li {
-    padding: 1em;
+.home_container .board_content_container .board li {
+    list-style-type: none;
+}
+.home_container .board_content_container .board li:before {
+    content: 'º';
+    padding: 0.3em;
     font-size: 0.8em;
 }
 .home_container .board_content_container .board .board_title {

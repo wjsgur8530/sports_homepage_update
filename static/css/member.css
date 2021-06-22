@@ -82,6 +82,11 @@
 .login_container .login_content .login_container_box .login_bg {
     background: url("../static/img/loginbg.png") no-repeat;
     background-size: contain;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 100%;
+    height: 310px;
+    box-sizing:border-box;
 }
 .login_container .login_content .login_btn_box .login_btn {
     color: white;

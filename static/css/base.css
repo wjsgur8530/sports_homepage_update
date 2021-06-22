@@ -43,6 +43,12 @@
     align-items: center;
     line-height: 1.5em;
 }
+.header_container .logo_container .logo .logobg {
+    background-image: url("../img/학교 로고.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 60px;
+}
 .header_container .logo_container .logo h3 {
     padding: 0.3em;
     font-size: 1.4em;
@@ -83,7 +89,10 @@
     width: 100%;
     max-height: 2100px;
 }
-.home_container .content_container img {
+.home_container .content_container .mainbg {
+    background-image: url("../img/mainbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 300px;
 }
@@ -171,7 +180,10 @@
     border-top: 1px solid #cdcdcd;
     padding-top: 15px;
 }
-.address img {
+.address .footerbg {
+    background-image: url("../img/학교 로고.png");
+    background-repeat: no-repeat;
+    background-position: center;
     width: 180px;
     height: 80px;
 }
@@ -368,7 +380,9 @@
     border-radius: 50% 75% 100% 75%;
     margin-top: 4em;
     margin-bottom: 3em;
-    background: #fff url('../static/img/earth.png') no-repeat 25% 100%;
+    background-image: url('../static/img/earth.png');
+    background-repeat: no-repeat;
+    background-position: 25%;
 }
 .group_container .group_content .group_bg {
     background-repeat: no-repeat;
@@ -386,4 +400,14 @@
 .establish_container .establish_content ul .rule .indent {
     margin-top: -1em;
     padding-left: 2em;
+}
+.map {
+    background-image: url('../img/map.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    margin: 0 auto;
+    width: 500px;
+    padding: 1em;
 }

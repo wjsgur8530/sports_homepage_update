@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: row;
     margin: 1em auto;
-    width: 1000px;
+    width: 1100px;
     overflow: hidden;
     position: relative;
 }
@@ -51,8 +51,15 @@
     border-bottom: 1px solid black;
     cursor: pointer;
     font-weight: bold;
-    background: #fff url('../static/img/minimize_black_24dp.svg') no-repeat 100% 30%;
+    background: #fff url('../static/img/sidebutton.png') no-repeat 100% 35% ;
     display: list-item;
+}
+.researchfield_container .researchfield_title ul li:hover,
+.presentation_container .presentation_title ul li:hover,
+.research_project_container .research_project_title ul li:hover,
+.thesisdata_container .thesisdata_title ul li:hover {
+    background-color: #dbe000;
+    background: #dbe000 url('../static/img/minimize_black_24dp.svg') no-repeat 100% 25%;
 }
 .researchfield_container .researchfield_title ul li a,
 .presentation_container .presentation_title ul li a,

@@ -169,7 +169,7 @@
     color: white;
 }
 /* footer */
-.address {
+.footer_container {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
@@ -180,7 +180,7 @@
     border-top: 1px solid #cdcdcd;
     padding-top: 15px;
 }
-.address .footerbg {
+.footer_container .footerbg {
     background-image: url("../img/학교 로고.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -247,8 +247,16 @@
     border-bottom: 1px solid black;
     cursor: pointer;
     font-weight: bold;
-    background: #fff url('../static/img/minimize_black_24dp.svg') no-repeat 100% 30%;
+    background: #fff url('../static/img/sidebutton.png') no-repeat 100% 35% ;
     display: list-item;
+}
+.introduce_container .introduce_title ul li:hover,
+.establish_container .establish_title ul li:hover,
+.establish_object_container .establish_object_title ul li:hover,
+.group_container .group_title ul li:hover,
+.directions_container .directions_title ul li:hover {
+    background-color: #dbe000;
+    background: #dbe000 url('../static/img/minimize_black_24dp.svg') no-repeat 100% 25%;
 }
 .introduce_container .introduce_title ul li a,
 .establish_container .establish_title ul li a,

@@ -25,9 +25,19 @@
             <label>충청북도 충주시 충원대로 268, 의료생명대학(U2) 003호</label> <br>
             <label>043-840-4770</label>
         </div>
-        <div class="map"></div>
+        <div id="map" style="width:500px;height:400px;"></div>
         <h3 style="margin-top: 1.5em;">홈페이지</h3>
         <label style="margin-bottom: 1.5em;">http://ksci.kku.ac.kr/</label>
     </div>
 </div>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9df0f926994acd8a60510f7236e8ee30"></script>
+<script>
+    var container = document.getElementById('map');
+    var options = {
+        center: new kakao.maps.LatLng(36.9490697608255, 127.90581451628539),
+        level: 3
+    };
+
+    var map = new kakao.maps.Map(container, options);
+</script>
 {% endblock%}

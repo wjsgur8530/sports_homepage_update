@@ -32,8 +32,8 @@
     background-position: top;
     opacity: 40%;
     height: 130px;
-    border-top: 1px solid black;
-    border-bottom: 3px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 .researchfield_container .researchfield_title h3 .title,
 .presentation_container .presentation_title h3 .title,
@@ -101,19 +101,14 @@
  .thesisdata_container .thesisdata_content span:last-child:after {
     content: '';
 }
-.researchfield_container .researchfield_content h2,
-.presentation_container .presentation_content h2,
-.research_project_container .research_project_content h2,
- .thesisdata_container .thesisdata_content h2 {
-    font-weight: bold;
-}
 .researchfield_container .researchfield_content h3,
 .presentation_container .presentation_content h3,
 .research_project_container .research_project_content h3,
- .thesisdata_container .thesisdata_content h3 {
+.thesisdata_container .thesisdata_content h3 {
     font-weight: bold;
     border-left: 5px solid #8BC34A;
     padding-left: 0.6em;
+    color: #00713b;
 }
 .researchfield_container .researchfield_content ul li,
 .presentation_container .presentation_content ul li,
@@ -121,8 +116,7 @@
  .thesisdata_container .thesisdata_content ul li {
     list-style-type: none;
     padding: 1em 0 0.5em 1em;
-    font-weight: bold;
-    color: grey;
+    color: black;
 }
 .researchfield_container .researchfield_content ul li p:before,
 .presentation_container .presentation_content ul li p:before,

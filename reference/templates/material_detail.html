@@ -1,23 +1,24 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<span style="color: white;">{{ board_detail.update_counter }}</span>
+<span style="color: white;">{{ material_detail.update_counter }}</span>
 <!-- 함수 호출하여 hit+1 -->
 <div class="board_container">
     <div class="board_title">
         <h3 style="background-image: url({% static 'img/마크.jpg' %}"><span class="title">게시판</span></h3>
         <div class="introduce_title_bg" style="background: url({% static 'img/마크.jpg' %} no-repeat 50% 100%);"></div>
         <ul>
-            <li><a href="{% url 'board' %}">게시판</a></li>
+            <li><a href="{% url 'material' %}">연구자료</a></li>
+            <li><a href="{% url 'photo' %}">포토갤러리</a></li>
         </ul>
     </div>
     <div class="board_content">
         <div class="toolbar">
             <span>스포츠융복합연구소</span>
             <span>게시판</span>
-            <span>게시판</span>
+            <span>연구자료</span>
         </div>
-        <h3>게시판</h3>
+        <h3>연구자료</h3>
         <hr>
         <div class="detail_section" style="padding-top: 20px;">
             <div class="page_article" style="width: 724px;">
@@ -31,30 +32,30 @@
                     <tbody style="display: table-row-group; vertical-align: middle; border-color: inherit;">
                         <tr style="display: table-row; vertical-align: inherit; border-color: inherit">
                             <th>제목</th>
-                            <td style="font-weight: bold;">{{ board_detail.title }}</td>
+                            <td style="font-weight: bold;">{{ material_detail.title }}</td>
                             <th>조회수</th>
-                            <td>{{ board_detail.hit }}</td>
+                            <td>{{ material_detail.hit }}</td>
                         </tr>
                         <tr>
                             <th>작성자</th>
-                            <td>{{ board_detail.user }}</td>
+                            <td>{{ material_detail.user }}</td>
                             <th>작성일</th>
-                            <td style="font-size: 0.9em;">{{ board_detail.created_date|date:"Y-m-d" }}</td>
+                            <td style="font-size: 0.9em;">{{ material_detail.created_date|date:"Y-m-d" }}</td>
                         </tr>
                     </tbody>
                 </table>
                 <div class="detail_content" style="padding-top: 20px; padding-bottom: 20px;">
                     <p>
-                        {{ board_detail.content }}
+                        {{ material_detail.content }}
                     </p>
                 </div>
                 <hr>
 
                 <div style="text-align: right;">
-                    <input type="button" value="목록" style="background: #b4b4b4; width: 100px; height: 40px; color: #fff; text-align: center; display: inline-block; font-size: 0.8em; font-weight: bold; min-width: 100px; line-height: 38px; padding: 0 10px; border: 0; outline: 0;" onclick="location.href='{% url 'board' %}'">
+                    <input type="button" value="목록" style="background: #b4b4b4; width: 100px; height: 40px; color: #fff; text-align: center; display: inline-block; font-size: 0.8em; font-weight: bold; min-width: 100px; line-height: 38px; padding: 0 10px; border: 0; outline: 0;" onclick="location.href='{% url 'material' %}'">
                     {% if user.is_authenticated %}
-                    <input type="button" value="수정" style="background: dodgerblue; width: 100px; height: 40px; color: #fff; text-align: center; display: inline-block; font-size: 0.8em; font-weight: bold; min-width: 100px; line-height: 38px; padding: 0 10px; border: 0; outline: 0;" onclick="location.href='{% url 'edit' board_detail.pk %}'">
-                    <input type="button" value="삭제" style="background: crimson; width: 100px; height: 40px; color: #fff; text-align: center; display: inline-block; font-size: 0.8em; font-weight: bold; min-width: 100px; line-height: 38px; padding: 0 10px; border: 0; outline: 0;" onclick="location.href='{% url 'delete' board_detail.pk %}'">
+                    <input type="button" value="수정" style="background: dodgerblue; width: 100px; height: 40px; color: #fff; text-align: center; display: inline-block; font-size: 0.8em; font-weight: bold; min-width: 100px; line-height: 38px; padding: 0 10px; border: 0; outline: 0;" onclick="location.href='{% url 'material_edit' material_detail.pk %}'">
+                    <input type="button" value="삭제" style="background: crimson; width: 100px; height: 40px; color: #fff; text-align: center; display: inline-block; font-size: 0.8em; font-weight: bold; min-width: 100px; line-height: 38px; padding: 0 10px; border: 0; outline: 0;" onclick="location.href='{% url 'material_delete' material_detail.pk %}'">
                     {% endif %}
                 </div>
             </div>

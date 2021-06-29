@@ -218,6 +218,7 @@
 .group_container .group_title h3,
 .directions_container .directions_title h3 {
     padding: 3em;
+    text-align: center;
     color: black;
     font-weight: 900;
     font-size: 1.3em;
@@ -226,8 +227,8 @@
     background-position: top;
     opacity: 40%;
     height: 130px;
-    border-top: 1px solid black;
-    border-bottom: 3px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 .introduce_container .introduce_title h3 .title,
 .establish_container .establish_title h3 .title,
@@ -235,7 +236,7 @@
 .group_container .group_title h3 .title,
 .directions_container .directions_title h3 .title {
     margin-bottom: 5em;
-    opacity: 100%;
+    color: #006400;
 }
 .introduce_container .introduce_title ul li,
 .establish_container .establish_title ul li,
@@ -307,13 +308,6 @@
 .directions_container .directions_content span:last-child:after {
     content: '';
 }
-.introduce_container .introduce_content h2,
-.establish_container .establish_content h2,
-.establish_object_container .establish_object_content h2,
-.group_container .group_content h2,
-.directions_container .directions_content h2 {
-    font-weight: bold;
-}
 .introduce_container .introduce_content h3,
 .establish_container .establish_content h3,
 .establish_object_container .establish_object_content h3,
@@ -322,13 +316,13 @@
     font-weight: bold;
     border-left: 5px solid #8BC34A;
     padding-left: 0.6em;
+    color: #00713b;
 }
 .introduce_container .introduce_content ul li,
 .establish_container .establish_content ul li {
     list-style-type: none;
     padding: 1em 0 0.5em 1em;
-    font-weight: bold;
-    color: grey;
+    color: black;
 }
 .introduce_container .introduce_content ul li p:before {
     content: 'º';
@@ -351,9 +345,8 @@
     color: green;
 }
 .establish_object_container .establish_object_content h6 {
-    font-weight: bold;
     padding: 0.4em;
-    color: grey;
+    color: black;
     border-bottom: 1px solid lightgrey;
 }
 .establish_container .establish_content h6 span {
@@ -361,9 +354,8 @@
     padding-left: 0.6em;
 }
 .directions_container .directions_content label {
-    color: grey;
+    color: black;
     padding-top: 0.3em;
-    font-weight: bold;
 }
 .directions_container .directions_content .way {
     margin-top: 1.5em;
@@ -393,7 +385,9 @@
     background-position: 25%;
 }
 .group_container .group_content .group_bg {
+    background: url('../static/img/groupjpg.jpg');
     background-repeat: no-repeat;
+    background-size: contain;
     width: 750px;
     height: 2200px;
 }

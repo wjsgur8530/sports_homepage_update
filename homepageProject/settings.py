@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'laboratorynews',
     'member',
     'board',
+    'reference',
     'bootstrap4',
 ]
 
@@ -100,6 +101,16 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'sports_homepage', # Database 이름
+#         'USER': 'root', # 데이터베이스에서 사용할 계정
+#         'PASSWORD': 'jj9672@@', # 계정의 비밀번호
+#         'HOST': 'localhost', # 데이테베이스 주소
+#         'PORT': '3306', # 데이터베이스 포트, mysql 디폴트값은 3306
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -145,7 +156,6 @@ STATICFILES_DIRS = [
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 

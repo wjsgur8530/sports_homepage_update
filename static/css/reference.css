@@ -1,0 +1,36 @@
+.board_container .board_content .search .board_module_search {
+    font-size: 0;
+    text-align: right;
+}
+.board_container .board_content .search .board_module_search select {
+    width: 115px;
+    height: 28px;
+    border: 1px solid #cdcdcd;
+    padding-left: 5px;
+    padding-right: 35px;
+    appearance: none;
+    background: #fff url('../static/img/selectbg.png') no-repeat 100% 0;
+}
+.board_container .board_content .search .board_module_search select option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+}
+.board_container .board_content .search .board_module_search li #search_material,
+ .board_container .board_content .search .board_module_search li #search_photo {
+    width: 220px;
+    height: 28px;
+    border: 1px solid #cdcdcd;
+    padding-left: 3px;
+    box-sizing: border-box;
+}
+.board_container .board_content .search .board_module_search li .material_btn,
+ .board_container .board_content .search .board_module_search li .photo_btn {
+    background-color: #4f4f4f;
+    width: 110px;
+    height: 28px;
+    line-height: 100%;
+    color: #fff;
+    text-align: center;
+}

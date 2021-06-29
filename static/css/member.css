@@ -24,8 +24,8 @@
     background-position: top;
     opacity: 40%;
     height: 130px;
-    border-top: 1px solid black;
-    border-bottom: 3px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 .login_container .login_title h3 .title {
     margin-bottom: 5em;
